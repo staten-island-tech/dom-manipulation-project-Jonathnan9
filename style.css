@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(61, 76, 174);
+    gap: 4em;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    align-items: center;
+  }
+  
+html * {
+    font-size: 1.2rem;
+    justify-content: center;
+  }
+
+.heading {
+  background-color: rgba(90, 106, 210, 0.8);
+  border-radius: 2em;
+  height: 24vh;
+  width: 91%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 4%;
+  min-width: 20em;
+}
+
+#title {
+  font-size: 3rem;
+}
+
+.forms {
+    background-color: rgba(90, 106, 210, 0.8);
+    border-radius: 2em;
+    height: 44vh;
+    width: 82%;
+    margin: 0 auto; 
+    gap: 1em 2em;
+    padding: 4%;
+    align-items: center;
+    text-align: center;
+    min-width: 20em;
+}
+
+input {
+    width: 100%; 
+}
+
+#formTitle {
+    font-size: 2rem;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  margin: 0, auto;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.box {
+  border-radius: 2em;
+  margin: 20em, auto;
+  width: 22%;
+  height: 200px;
+  padding: 1%;
+  min-width: 15em;
+  transition-duration: 0.7s;
+  text-align: center;
+}
+.box img {
+  height: 70%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .boxes {
+    flex-direction: row;
+  }
+  .box {
+    width: 26%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .boxes {
+    flex-direction: row;
+  }
+  .box {
+    width: 36%;
+  }
+  html * {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .boxes {
+    flex-direction: column;
+  }
+  .box {
+    width: 80%;
+  }
+  html * {
+    font-size: 4vw;
+  }
+}
