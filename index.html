@@ -13,24 +13,24 @@
       <div class="forms">
         <h1 id="formTitle">Input Values Here</h1>
         <form action="" method="get" class="form">
-            <div class="form">
-                <label for="item2">Box Title</label>
-                <input type="text" name="title" id="boxTitle" required />
-            </div>
-            <div class="form">
-                <label for="item3">Box Caption</label>
-                <input type="text" name="caption" id="boxCaption" required />
+                <label for="item1">Box Title</label>
+                <input type="text" name="title" id="boxTitle" required maxlength="50"/>
 
-                <label for="item1">Box Background Color</label>
-                <input type="color" name="bgcolor" id="color"/>
+                <label for="item2">Box Caption</label>
+                <input type="text" name="caption" id="boxCaption" required maxlength="100"/>
 
-                <label for="item4">Image</label>
+                <label for="item3">Box Background Color</label>
+                <input type="color" name="bgcolor" id="bgcolor"/>
+
+                <label for="item4">Box Background Color</label>
+                <input type="color" name="txtcolor" id="txtcolor"/>
+
+                <label for="item5">Image</label>
                 <input type="file" name="image" id="image"/>
-            </div>
         <button type="submit" class="submit">Submit</button>
         </form>
     </div>
-    </div>
+    <div class="boxes"></div>
     <script src="index.js"></script>
 </body>
 </html>

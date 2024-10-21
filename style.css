@@ -1,6 +1,6 @@
 body {
     background-color: rgb(61, 76, 174);
-    gap: 4em;
+    gap: 8em;
     color: rgb(255, 255, 255);
     box-sizing: border-box;
     align-items: center;
@@ -20,8 +20,8 @@ html * {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 2em;
-  padding: 4%;
+  margin: 0 auto 2em auto;
+  padding: 2%;
   min-width: 20em;
 }
 
@@ -32,14 +32,14 @@ html * {
 .forms {
     background-color: rgba(90, 106, 210, 0.8);
     border-radius: 2em;
-    height: 44vh;
+    height: 58vh;
     width: 82%;
-    margin: 0 auto; 
     gap: 1em 2em;
     padding: 4%;
     align-items: center;
     text-align: center;
     min-width: 20em;
+    margin: 0 auto 4em auto;
 }
 
 input {
@@ -53,7 +53,7 @@ input {
 .boxes {
   display: flex;
   flex-direction: row;
-  margin: 0, auto;
+  margin: 0 auto;
   align-items: center;
   gap: 2em;
   flex-wrap: wrap;
@@ -61,8 +61,8 @@ input {
 .box {
   border-radius: 2em;
   margin: 20em, auto;
-  width: 22%;
-  height: 200px;
+  width: 38%;
+  height: 72vh;
   padding: 1%;
   min-width: 15em;
   transition-duration: 0.7s;
@@ -70,6 +70,7 @@ input {
 }
 .box img {
   height: 70%;
+  width: 60%;
   object-fit: cover;
 }
 
