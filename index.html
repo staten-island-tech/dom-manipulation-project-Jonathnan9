@@ -1,36 +1,42 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="heading">
-        <h1 id="title">inputsomethingidk</h1>
-      </div>
+      <h1 id="title">inputsomethingidk</h1>
+    </div>
 
-      <div class="forms">
-        <h1 id="formTitle">Input Values Here</h1>
-        <form action="" method="get" class="form">
-                <label for="item1">Box Title</label>
-                <input type="text" name="title" id="boxTitle" required maxlength="50"/>
+    <div class="forms">
+      <h1 id="formTitle">Input Values Here</h1>
+      <form action="" method="get" class="form">
+        <label for="item1">Box Title</label>
+        <input type="text" name="title" id="boxTitle" required maxlength="50" />
 
-                <label for="item2">Box Caption</label>
-                <input type="text" name="caption" id="boxCaption" required maxlength="100"/>
+        <label for="item2">Box Caption</label>
+        <input
+          type="text"
+          name="caption"
+          id="boxCaption"
+          required
+          maxlength="100"
+        />
 
-                <label for="item3">Box Background Color</label>
-                <input type="color" name="bgcolor" id="bgcolor"/>
+        <label for="item3">Box Background Color</label>
+        <input type="color" name="bgcolor" id="bgcolor" />
 
-                <label for="item4">Box Background Color</label>
-                <input type="color" name="txtcolor" id="txtcolor"/>
+        <label for="item4">Box Text Color</label>
+        <input type="color" name="txtcolor" id="txtcolor" />
 
-                <label for="item5">Image</label>
-                <input type="file" name="image" id="image"/>
+        <label for="item5">Image</label>
+        <input type="file" name="image" id="image" />
         <button type="submit" class="submit">Submit</button>
-        </form>
+      </form>
     </div>
     <div class="boxes"></div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

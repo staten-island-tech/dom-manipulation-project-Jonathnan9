@@ -11,14 +11,16 @@ const DOMSelectors = {
 
 function createBox(title, caption, bgColor, txtColor, imageUrl) {
   const boxesContainer = document.querySelector(".boxes");
+  const boxId = `box-${Date.now()}`;
 
   boxesContainer.insertAdjacentHTML(
     "beforeend",
     `
-  <div class="box" style="background-color: ${bgColor};">
+  <div class="box" id="${boxId}" style="background-color: ${bgColor};">
     <h2 style="color: ${txtColor};">${title}</h2>
     ${imageUrl ? `<img src="${imageUrl}" alt="Uploaded Image" />` : ""}
     <p style="color: ${txtColor};">${caption}</p>
+    <button class="delete-btn" onclick="deleteBox('${boxId}')">Delete</button>
   </div>
   `
   );
@@ -32,6 +34,8 @@ function submitValues(event) {
     return;
   }
 
+  // const maxTitleLength = 50;
+  // const maxCaptionLength = 100;
   const title = DOMSelectors.boxTitleInput.value;
   const caption = DOMSelectors.boxCaptionInput.value;
   const bgColor = DOMSelectors.boxColorInput.value;
@@ -39,8 +43,25 @@ function submitValues(event) {
   const imageFile = DOMSelectors.imageInput.files[0];
   const imageUrl = imageFile ? URL.createObjectURL(imageFile) : "";
 
+  // if (title.length > maxTitleLength) {
+  //   alert(`Title is above ${maxTitleLength} character limit.`);
+  //   return;
+  // }
+
+  // if (caption.length > maxCaptionLength) {
+  //   alert(`Caption is above ${maxCaptionLength} character limit.`);
+  //   return;
+  // }
+
   createBox(title, caption, bgColor, txtColor, imageUrl);
   DOMSelectors.form.reset();
 }
 
 DOMSelectors.submitButton.addEventListener("click", submitValues);
+
+function deleteBox(boxId) {
+  const box = document.getElementById(boxId);
+  if (box) {
+    box.remove();
+  }
+}

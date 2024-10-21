@@ -1,15 +1,15 @@
 body {
-    background-color: rgb(61, 76, 174);
-    gap: 8em;
-    color: rgb(255, 255, 255);
-    box-sizing: border-box;
-    align-items: center;
-  }
-  
+  background-color: rgb(61, 76, 174);
+  gap: 8em;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  align-items: center;
+}
+
 html * {
-    font-size: 1.2rem;
-    justify-content: center;
-  }
+  font-size: 1.2rem;
+  justify-content: center;
+}
 
 .heading {
   background-color: rgba(90, 106, 210, 0.8);
@@ -30,24 +30,24 @@ html * {
 }
 
 .forms {
-    background-color: rgba(90, 106, 210, 0.8);
-    border-radius: 2em;
-    height: 58vh;
-    width: 82%;
-    gap: 1em 2em;
-    padding: 4%;
-    align-items: center;
-    text-align: center;
-    min-width: 20em;
-    margin: 0 auto 4em auto;
+  background-color: rgba(90, 106, 210, 0.8);
+  border-radius: 2em;
+  height: 58vh;
+  width: 82%;
+  gap: 1em 2em;
+  padding: 4%;
+  align-items: center;
+  text-align: center;
+  min-width: 20em;
+  margin: 0 auto 4em auto;
 }
 
 input {
-    width: 100%; 
+  width: 100%;
 }
 
 #formTitle {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .boxes {
@@ -62,7 +62,7 @@ input {
   border-radius: 2em;
   margin: 20em, auto;
   width: 38%;
-  height: 72vh;
+  height: 86vh;
   padding: 1%;
   min-width: 15em;
   transition-duration: 0.7s;
